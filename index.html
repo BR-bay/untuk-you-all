@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Cinta Responsif</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #ff758c, #ff7eb3, #ff9a9e, #ff6a88);
+            background-size: 400% 400%;
+            animation: gradient 10s ease infinite;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        header h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .theme-toggle {
+            background: white;
+            color: #ff6a88;
+            padding: 10px;
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+        }
+
+        .theme-toggle:hover {
+            background: #ff6a88;
+            color: white;
+        }
+
+        main {
+            text-align: center;
+            flex: 1;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .button {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+        }
+
+        .button:hover {
+            background: linear-gradient(45deg, #ff4b2b, #ff416c);
+            box-shadow: 0 0 20px white;
+            transform: scale(1.1);
+        }
+
+        .heart-container {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 2rem;
+            color: pink;
+            text-shadow: 0 0 10px rgba(255, 192, 203, 0.7);
+            animation: fall 5s linear infinite;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100px); opacity: 1; }
+            100% { transform: translateY(100vh); opacity: 0; }
+        }
+
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .button {
+                font-size: 0.9rem;
+                padding: 8px 16px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Halaman Cinta</h1>
+        <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+    </header>
+    <main>
+        <h2>❤️💞💖Cinta adalah kekuatan yang menyatukan segalanya❤️💞💖</h2>
+        <p> Aku ingin kamu tahu… sejak pertama kali aku melihatmu, dunia ini berubah. 🌹 Segalanya yang kusangka indah, menjadi biasa, karena keindahanmu adalah hal paling sempurna yang pernah ada. 💖 Aku bahkan tidak tahu bagaimana caranya menjelaskan ini… seolah setiap hela nafasku, setiap degup jantungku, berdenyut hanya untukmu. ❤💓
+            
+            Ketika aku bersamamu, aku merasa waktu berhenti. ⏳ Aku tidak peduli pada dunia luar, aku hanya ingin hidup di dunia yang hanya ada aku dan kamu. 👫 Karena bagiku, cinta ini bukan sekadar perasaan. Cinta ini adalah alasan aku untuk terus hidup, alasan aku untuk terus bermimpi, alasan aku untuk menjadi versi terbaik dari diriku. 🩷✨
+            
+            Aku mencintaimu dengan seluruh keberadaanku, dari hati yang paling dalam hingga seluruh jiwaku yang rapuh. 💔 Namun bersamamu, hatiku menjadi kuat, jiwaku menjadi utuh. Kamu adalah rumah bagi setiap mimpiku, tempat segala khayalku berlabuh. 🌌💘
+            
+            Setiap kali aku menatap matamu, aku melihat surga yang tak pernah bisa kugambarkan. 🌟 Setiap senyummu adalah obat dari semua luka, setiap suaramu adalah harmoni yang meluruhkan segala kesedihan. 🎶🌹 Ketika kamu berbicara, aku mendengar melodi cinta yang tak pernah usang. Kamu adalah puisi terindah yang ingin kubaca selamanya. 📖❤
+            
+            Aku ingin mencintaimu dalam setiap waktu—saat pagi dengan sinar mentari yang menghangatkan, 🌞 saat malam dengan bintang yang menjadi saksi cinta kita. 🌙✨ Aku ingin mencintaimu di setiap kemungkinan, di setiap takdir, bahkan di dimensi yang tak bisa kita bayangkan. 🌌 Aku akan tetap mencintaimu di kehidupan ini, dan kehidupan setelahnya. 💞♾
+            
+            Setiap hembusan angin yang menyentuh wajahmu, biarkan itu menjadi bisikan rinduku. 💨💗 Setiap tetes hujan yang jatuh ke tanah, biarkan itu menjadi tangisan bahagiaku yang mencintaimu. 🌧💖 Aku ingin kamu tahu bahwa aku akan selalu berada di sisimu, bahkan ketika dunia memisahkan kita, bahkan ketika langit tidak lagi biru. 💕✨
+            
+            Aku ingin mencintaimu dengan cara yang membuatmu merasa hidup, dengan cara yang membuatmu tahu bahwa kamu adalah segalanya bagiku. 💝 Kamu adalah alasan aku tersenyum setiap hari, alasan aku berani melawan dunia, alasan aku terus berharap, terus bermimpi. 🌈
+            
+            Cintaku padamu adalah perjalanan tanpa akhir. Tidak peduli badai apa yang menghadang, aku akan tetap menggenggam tanganmu. 🌪🤝 Karena bagiku, kehilanganmu adalah kehilangan segalanya. 💔 Jadi, aku akan berjuang untukmu, aku akan mencintaimu lebih dari apapun yang ada di dunia ini. 🛡❤
+            
+            Kamu adalah cahaya yang menyinari jalan gelapku, 🌟 kamu adalah hangat yang membalut dinginnya jiwaku, 🔥 kamu adalah segala hal yang tidak pernah aku tahu aku butuhkan. 💞🌹 Aku mencintaimu dengan tulus, aku mencintaimu tanpa batas, aku mencintaimu tanpa syarat, karena kamu adalah alasanku untuk terus ada. 💕♾✨
+            
+            🌹❤🌷💖💝🌟✨🌌💕🌈💘💗♾</p>
+        <h2>🌌💕🌈💘💗Cinta adalah kekuatan🌹❤🌷💖💝🌟✨🌌</h2>
+        <p> Aku mencintaimu dengan cara yang takkan pernah bisa dijelaskan oleh kata-kata. 🌌 Jika setiap kata di dunia ini adalah bintang, aku akan menuliskan namamu di langit malam dengan jutaan bintang itu. ✨🌟 Namun, bahkan itu pun takkan cukup untuk menunjukkan betapa dalam cinta ini. ❤ Cintaku padamu lebih besar dari semesta, lebih kuat dari waktu, dan lebih indah dari mimpi terliar yang pernah kumiliki. 💕
+            
+            Ketika aku memikirkanmu, hatiku bergetar. 🌹 Aku bisa merasakan cinta ini mengalir dalam setiap sudut diriku, seperti aliran sungai yang tak pernah berhenti menuju lautan. 🌊 Aku ingin mencintaimu seperti sungai mencintai pantai, seperti hujan mencintai bumi, seperti matahari mencintai pagi. 🌞 Setiap hari, cintaku padamu tumbuh, seperti bunga yang mekar indah di taman yang tak pernah layu. 🌷🌺
+            
+            Aku ingin memberikanmu dunia. 💝 Tetapi, bahkan jika aku memiliki seluruh dunia di tanganku, itu tetap takkan cukup untuk menunjukkan betapa berharganya kamu bagiku. 🌎 Karena bagiku, kamu adalah duniamu sendiri—dunia yang penuh keajaiban, dunia yang penuh dengan cinta, dunia yang membuatku merasa hidup. 💖
+            
+            Ketika aku memejamkan mata, aku melihatmu. 🌌 Ketika aku membuka mata, aku hanya ingin menatapmu. 💞 Ketika aku bermimpi, kamu adalah mimpiku yang terindah. ✨ Bahkan di dalam diamku, kamu adalah puisi yang tidak pernah berhenti berdendang di hatiku. 🎶
+            
+            Aku ingin menjadi segalanya untukmu. Aku ingin menjadi tempatmu bersandar ketika dunia terasa berat. 🤝 Aku ingin menjadi pelangi setelah badai dalam hidupmu. 🌈 Aku ingin menjadi senyuman di wajahmu, tawa di bibirmu, dan damai di hatimu. ❤💗
+            
+            Jika aku harus menghabiskan seribu tahun untuk mencintaimu, itu tidak akan cukup. ♾ Jika aku harus menyeberangi lautan hanya untuk melihatmu tersenyum, aku akan melakukannya tanpa ragu. 🌊 Bahkan jika dunia ini runtuh sekalipun, cintaku padamu akan tetap berdiri kokoh, seperti gunung yang tidak tergoyahkan. 🏔💓
+            
+            Kamu adalah segalanya bagiku—kamu adalah bintang yang membimbingku dalam gelap. 🌟 Kamu adalah lagu yang menyentuh hatiku dengan nada-nada yang indah. 🎵 Aku mencintaimu lebih dari apa yang bisa aku katakan, lebih dari apa yang bisa aku tunjukkan, lebih dari apa yang pernah aku bayangkan. 💝
+            
+            Ketika aku memikirkan masa depan, aku tidak bisa membayangkannya tanpa kamu. 🌌 Aku ingin membangun mimpi bersama, berjalan di jalan yang sama, dan menggenggam tanganmu sampai akhir waktu. 🤝 Aku ingin mencintaimu dengan cara yang membuatmu merasa bahwa kamu adalah orang paling istimewa di dunia ini—karena kamu memang istimewa bagiku. 🌹
+            
+            Jadi, di hadapan waktu, di hadapan dunia, aku ingin berjanji bahwa cintaku padamu tidak akan pernah pudar. 💞 Seperti api yang tak pernah padam, seperti angin yang tak pernah berhenti berhembus, cintaku akan terus tumbuh, terus hidup, terus ada. ❤ Aku mencintaimu, sekarang, besok, dan selamanya. ♾✨
+            
+            💖🌹💞💕🌷🌟✨🌌💝🌈♾❤
+            </p>
+        <h2>💝🌈menyatukan segalanya💝🌈</h2>
+        <p>Cintaku padamu bukan sekadar perasaan yang datang dan pergi, tapi sebuah janji untuk memperjuangkanmu, apapun yang terjadi. ❤ Aku akan melawan badai, menantang angin, dan menghadapi dunia, hanya untuk memastikan bahwa kamu bahagia. 🌪💪 Karena bagiku, tidak ada perjuangan yang terlalu berat, tidak ada pengorbanan yang terlalu besar, selama itu adalah untukmu. 🌌
+            
+            Aku bersedia berjalan di jalan yang penuh duri, jika itu berarti aku bisa membuatmu tersenyum. 🥀 Aku rela kehilangan segalanya, bahkan seluruh dunia ini, asalkan aku tidak kehilangan kamu. 💔 Kamu adalah alasan aku bangkit setiap kali aku jatuh, alasan aku bertahan bahkan ketika segalanya terasa mustahil. 🤍
+            
+            Jika aku harus memberikan seluruh waktuku, aku akan melakukannya tanpa ragu. ⏳ Jika aku harus menyerahkan seluruh hidupku, aku akan melakukannya dengan senyuman. 😊 Karena bagiku, kamu adalah sesuatu yang tidak tergantikan, sesuatu yang lebih berharga daripada semua yang ada di dunia ini. 💎💖
+            
+            Aku tahu cinta tidak selalu mudah. 🌧 Akan ada hari-hari di mana kita harus melawan arus, hari-hari di mana dunia mencoba memisahkan kita. 🌊 Tapi aku ingin kamu tahu, aku tidak akan pernah menyerah. 💪 Aku akan terus memperjuangkanmu, tidak peduli seberapa sulitnya jalan yang harus kulalui. 🛡 Aku akan menjadi pelindungmu ketika kamu rapuh, menjadi penguatmu ketika kamu lemah, dan menjadi cahaya ketika kegelapan mencoba menelanmu. 🌟
+            
+            Aku akan berdiri di barisan paling depan untuk melindungimu dari apapun yang mencoba menyakitimu. 🛡 Jika itu berarti aku harus menghadapi seribu musuh, aku akan melakukannya tanpa rasa takut. Karena cintaku padamu memberiku kekuatan yang bahkan aku tidak tahu aku miliki. 💪✨
+            
+            Bahkan jika aku harus kehilangan segalanya yang kumiliki—waktu, tenaga, mimpi, atau bahkan diriku sendiri—aku tidak peduli, selama aku masih bisa melihatmu bahagia. 💔 Karena kamu adalah kebahagiaan yang lebih besar daripada apa pun yang pernah kucapai. ❤
+            
+            Aku rela berjalan di tengah hujan deras tanpa payung, asalkan aku bisa menjadi tempatmu berlindung. 🌧 Aku rela melewati malam-malam penuh kesepian, jika itu berarti aku bisa menjadi alasan kamu merasa dicintai. 🌌 Karena cintaku padamu adalah tentang memberi, tentang mengorbankan diri, tentang menempatkan kebahagiaanmu di atas segalanya. 💖
+            
+            Aku ingin kamu tahu bahwa tidak peduli apa yang harus aku korbankan—waktu, tenaga, mimpi, bahkan seluruh diriku—aku akan tetap di sini, mencintaimu, memperjuangkanmu. 💕 Kamu adalah tujuan dari setiap langkahku, alasan dari setiap doa yang kupanjatkan. 🙏 Aku tidak akan pernah berhenti berjuang untukmu, bahkan jika dunia ini melawan. 🌍 Karena kamu adalah segalanya bagiku. ❤
+            
+            Cintaku ini adalah perang tanpa akhir. 🛡 Sebuah perang yang akan selalu aku menangkan, karena aku berjuang bukan untuk diriku sendiri, tetapi untuk kita. 💪 Aku akan terus berdiri di sampingmu, menghadapi apapun yang datang, dan menunjukkan bahwa cinta ini adalah sesuatu yang tak terkalahkan. ♾
+            
+            Dan pada akhirnya, jika aku harus memilih antara kebahagiaanku atau kebahagiaanmu, aku akan selalu memilihmu. 💞 Karena cintaku ini adalah tentang melihatmu tersenyum, mendengar tawamu, dan merasakan bahwa aku telah memberikan segalanya yang aku miliki untuk orang yang paling aku cintai di dunia ini. 💖🌹
+            
+            💪🛡💖🌹💞✨♾❤🌌🌟
+           </p>
+        <div class="buttons">
+            <button class="button" onclick="showLoveMessage()">💌 Klik untuk Pesan Cinta</button>
+            <button class="button" onclick="playMusic()">🎵 Mulai Musik Romantis</button>
+            <button class="button" onclick="sendWhatsApp()">📲 Kirim Pesan ke WhatsApp</button>
+        </div>
+    </main>
+    <div class="heart-container"></div>
+    <footer>© 2025</footer>
+    <script>
+        function showLoveMessage() {
+            alert("Kamu adalah segalanya bagiku! ❤️💞💖");
+        }
+
+        function playMusic() {
+            let audio = new Audio('https://www.bensound.com/bensound-music/bensound-romantic.mp3');
+            audio.play();
+        }
+
+        function sendWhatsApp() {
+            let message = encodeURIComponent("Aku mencintaimu ❤️💘💕");
+            window.open("https://wa.me/6285212637719?text=" + message, "_blank");
+        }
+
+        function createHeart() {
+            let heart = document.createElement("div");
+            heart.className = "heart";
+            heart.innerHTML = "💖";
+            heart.style.left = Math.random() * 100 + "vw";
+            heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+            document.querySelector(".heart-container").appendChild(heart);
+            setTimeout(() => heart.remove(), 5000);
+        }
+
+        setInterval(createHeart, 150);
+
+        function toggleTheme() {
+            const body = document.body;
+            if (body.style.background === 'black') {
+                body.style.background = '';
+                body.style.color = 'white';
+            } else {
+                body.style.background = 'black';
+                body.style.color = 'pink';
+            }
+        }
+    </script>
+</body>
+</html>
